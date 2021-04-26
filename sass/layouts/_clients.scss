@@ -12,19 +12,23 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  border: 1px solid $brand-color;
+  border-radius: 4px;
+  }
+
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: $brand-color;
+  }
+
 }
 
 .clients__icon {
   fill: #afb1b8;
 }
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid $brand-color;
-  border-radius: 4px;
-}
 
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: $brand-color;
-}
+

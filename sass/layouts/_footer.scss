@@ -1,0 +1,53 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $accent-color;
+}
+
+.footer__meta {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__studio {
+  color: $main-color;
+}
+
+.contacts--footer {
+  display: block;
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+
+.contacts__item--mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.social-icons__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $main-color;
+}

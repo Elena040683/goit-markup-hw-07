@@ -5,6 +5,10 @@
 .social-icons__item {
   width: 44px;
   height: 44px;
+
+  & + & {
+  margin-left: 10px;
+  }
 }
 
 .social-icons__link {
@@ -19,20 +23,16 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-icons__item + .social-icons__item {
-  margin-left: 10px;
-}
-
-.social-icons__link:hover .social-icons__svg,
-.social-icons__link:focus .social-icons__svg {
-  fill: $main-color;
-}
-
-.social-icons__link:hover,
-.social-icons__link:focus {
+  &:hover,
+  &:focus {
   background-color: $brand-color;
+  }
+
+  &:hover .social-icons__svg,
+  &:focus .social-icons__svg {
+  fill: $main-color;
+  }
 }
 
 .social-icons__svg {
